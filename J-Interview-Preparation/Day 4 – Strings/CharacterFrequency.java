@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class CharacterFrequency {
         System.out.println("Enter a string ");
         String str = sc.nextLine();
 
-        Map<Character, Integer> fmap = new HashMap<>();
+        Map<Character, Integer> fmap = new LinkedHashMap<>();
 
         for (char c : str.toCharArray()) {
             if (c == ' ')continue;
